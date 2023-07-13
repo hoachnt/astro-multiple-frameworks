@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TableReact from "../components/TableReact";
+
+const response = await fetch(
+    "https://directus.hoach.skryonline.com/items/sim_list"
+);
+const data = await response.json();
+const sims = data.data;
+---
+
+<Layout title="Sim table">
+    <main class="table-wrapper">
+        <TableReact sims={sims} client:load />
+    </main>
+</Layout>
+<style></style>
