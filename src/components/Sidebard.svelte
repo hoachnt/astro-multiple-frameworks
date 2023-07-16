@@ -4,6 +4,7 @@
     import { isSidebarOpen } from "../stores/SidebarStore";
     let active = "Gray Kittens";
     let open = $isSidebarOpen;
+    
     $: open = $isSidebarOpen
 
     function setActive(value: string) {

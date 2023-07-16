@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
-import TablePagination from '@mui/material/TablePagination';
+import { useStore } from '@nanostores/react';
+import { isSimsData } from '../stores/TableStore';
 
 const columns: GridColDef[] = [
     { field: 'number', headerName: 'Number', width: 160 },
@@ -14,11 +15,20 @@ const columns: GridColDef[] = [
 ];
 
 export default function TableReact({ sims }: { sims: any }) {
+    const [simsFetching, setSimsFetching] = React.useState(sims)
+    const $isSimsData = useStore(isSimsData)
+
+    React.useEffect(() => {
+        if ($isSimsData.length !== 0) {
+            setSimsFetching([...simsFetching, ...$isSimsData])
+        }
+    }, [$isSimsData])
+
     return (
         <div style={{ height: 720, width: '100%' }}>
             <DataGrid
                 className="data-grid"
-                rows={sims}
+                rows={simsFetching}
                 columns={columns}
                 initialState={{
                     pagination: {

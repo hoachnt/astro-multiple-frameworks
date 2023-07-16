@@ -19,6 +19,7 @@
     "@mui/icons-material": "^5.13.7",
     "@mui/material": "^5.13.7",
     "@mui/x-data-grid": "^6.9.2",
+    "@nanostores/react": "^0.7.1",
     "@nanostores/vue": "^0.10.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",

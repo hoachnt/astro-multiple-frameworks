@@ -57,18 +57,11 @@ const { title } = Astro.props;
 			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 	.page-wrapper {
-		transform: scale(0.8);
-		opacity: 0;
 		transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 100ch;
 		transition: 0.3s ease-in-out;
-	}
-
-	.page-wrapper.loaded {
-		transform: scale(1);
-		opacity: 1;
 	}
 	.content {
 		display: flex;
@@ -78,11 +71,3 @@ const { title } = Astro.props;
 		transition: none;
 	}
 </style>
-<script>
-	document.addEventListener("DOMContentLoaded", () => {
-		const pageWrapper = document.querySelector(
-			".page-wrapper"
-		) as HTMLElement;
-		pageWrapper.classList.add("loaded");
-	});
-</script>

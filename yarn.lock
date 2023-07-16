@@ -1563,6 +1563,11 @@
     prop-types "^15.8.1"
     reselect "^4.1.8"
 
+"@nanostores/react@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@nanostores/react/-/react-0.7.1.tgz#e0446f5cacc9fa53448c454f5d00ddb0f906a37a"
+  integrity sha512-EXQg9N4MdI4eJQz/AZLIx3hxQ6BuBmV4Q55bCd5YCSgEOAW7tGTsIZxpRXxvxLXzflNvHTBvfrDNY38TlSVBkQ==
+
 "@nanostores/vue@^0.10.0":
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/@nanostores/vue/-/vue-0.10.0.tgz#f1638933854c640ca4e91a59fda579cdbab4b8b0"
