@@ -5,7 +5,9 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Sim table">
   <main class="table-wrapper">
-    <Button variant="raised" transition:name="h1-title">Hello world</Button>
+    <div transition:name="h1-title">
+      <Button client:load variant="raised">Hello world</Button>
+    </div>
   </main>
 </Layout>
 <style></style>
