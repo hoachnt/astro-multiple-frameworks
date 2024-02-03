@@ -12,24 +12,25 @@
     "dependencies": {
         "@astrojs/react": "^3.0.9",
         "@astrojs/svelte": "^5.0.3",
+        "@astrojs/tailwind": "^5.1.0",
         "@astrojs/vue": "^4.0.8",
         "@emotion/react": "^11.11.3",
         "@emotion/styled": "^11.11.0",
         "@fontsource/roboto": "^5.0.8",
-        "@mui/icons-material": "^5.15.7",
-        "@mui/material": "^5.15.7",
-        "@mui/x-data-grid": "^6.19.3",
         "@nanostores/react": "^0.7.1",
         "@nanostores/vue": "^0.10.0",
+        "@nextui-org/react": "^2.2.9",
         "@types/react": "^18.2.52",
         "@types/react-dom": "^18.2.18",
         "astro": "^4.3.2",
         "axios": "^1.6.7",
+        "framer-motion": "^11.0.3",
         "nanostores": "^0.9.5",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "svelte": "^4.2.9",
         "svelte-material-ui": "^7.0.0-beta.16",
+        "tailwindcss": "^3.4.1",
         "vue": "^3.4.15"
     }
 }

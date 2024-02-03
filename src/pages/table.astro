@@ -1,12 +1,12 @@
 ---
-import Button from "@smui/button";
 import Layout from "../layouts/Layout.astro";
+import { Button } from "@nextui-org/react";
 ---
 
 <Layout title="Sim table">
   <main class="table-wrapper">
     <div transition:name="h1-title">
-      <Button client:load variant="raised">Hello world</Button>
+      <Button client:visible variant="flat">Hello world</Button>
     </div>
   </main>
 </Layout>
