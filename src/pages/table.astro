@@ -1,20 +1,11 @@
 ---
+import Button from "@smui/button";
 import Layout from "../layouts/Layout.astro";
-import TableReact from "../components/TableReact";
-import ButtonReact from "../components/ButtonReact";
-
-const response = await fetch(
-    "https://directus.hoach.skryonline.com/items/sim_list"
-);
-
-const data = await response.json();
-const sims = data.data;
 ---
 
 <Layout title="Sim table">
-    <main class="table-wrapper">
-        <TableReact sims={sims} client:load />
-        <ButtonReact client:visible />
-    </main>
+  <main class="table-wrapper">
+    <Button variant="raised" transition:name="h1-title">Hello world</Button>
+  </main>
 </Layout>
 <style></style>

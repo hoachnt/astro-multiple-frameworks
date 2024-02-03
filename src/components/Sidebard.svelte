@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts" type="module">
     import Drawer, { Content, Header, Title, Subtitle } from "@smui/drawer";
     import List, { Item, Text } from "@smui/list";
     import { isSidebarOpen } from "../stores/SidebarStore";
