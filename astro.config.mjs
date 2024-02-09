@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [svelte(), react(), vue(), tailwind()],
   vite: {
     ssr: {
-      noExternal: ["@smui/drawer", "@smui/common", "@smui/list", "@smui/button", "@nextui-org/button"]
-    }
+      noExternal: ["@smui/drawer",  "@smui/list", "@smui/button",]
+    },
   }
 });
