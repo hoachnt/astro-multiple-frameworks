@@ -8,10 +8,10 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   plugins: ['@astrojs/svelte'],
-  integrations: [svelte(), react(), vue(), tailwind()],
+  integrations: [svelte(), react(), vue({ appEntrypoint: '/src/pages/_app' }), tailwind()],
   vite: {
     ssr: {
-      noExternal: ["@smui/drawer",  "@smui/list", "@smui/button",]
+      noExternal: ["@smui/drawer",  "@smui/list", "@smui/button",],
     },
   }
 });

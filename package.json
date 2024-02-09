@@ -20,6 +20,10 @@
         "@nanostores/react": "^0.7.1",
         "@nanostores/vue": "^0.10.0",
         "@nextui-org/react": "^2.2.9",
+        "@svelteuidev/composables": "^0.15.4",
+        "@svelteuidev/core": "^0.15.4",
+        "@svelteuidev/motion": "^0.15.4",
+        "@svelteuidev/preprocessors": "^0.15.4",
         "@types/react": "^18.2.52",
         "@types/react-dom": "^18.2.18",
         "astro": "^4.3.2",
@@ -31,6 +35,7 @@
         "svelte": "^4.2.10",
         "svelte-material-ui": "^7.0.0-beta.16",
         "tailwindcss": "^3.4.1",
-        "vue": "^3.4.15"
+        "vue": "^3.4.15",
+        "vuetify": "^3.5.3"
     }
 }
