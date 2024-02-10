@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer v-model="$isSideBarOpen">
+  <v-navigation-drawer v-model="$isSideBarOpen" expand-on-hover rail>
     <v-list density="compact" nav>
       <v-list-item
         prepend-icon="mdi-home-city"

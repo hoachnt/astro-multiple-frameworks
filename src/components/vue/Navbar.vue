@@ -3,13 +3,7 @@
     <Sidebar />
     <v-app-bar :elevation="2" scroll-behavior="hide">
       <template v-slot:prepend>
-        <v-btn
-          variant="outlined"
-          @click="
-            () => {
-              isSidebarOpen.set(!$isSideBarOpen);
-            }
-          "
+        <v-btn variant="outlined" @click.stop="isSidebarOpen.set(!$isSideBarOpen)"
           >Menu</v-btn
         >
       </template>
