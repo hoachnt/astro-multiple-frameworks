@@ -1,12 +1,14 @@
 <template>
   <v-navigation-drawer v-model="$isSideBarOpen" expand-on-hover rail>
-    <v-list density="compact" nav>
+    <v-list>
       <v-list-item
         prepend-icon="mdi-chevron-left"
-        nav
         @click.stop="isSidebarOpen.set(false)"
       >
       </v-list-item>
+    </v-list>
+    <v-divider class="border-opacity-100" :thickness="1"></v-divider>
+    <v-list density="compact" nav>
       <v-list-item
         prepend-icon="mdi-home-city"
         title="Home"

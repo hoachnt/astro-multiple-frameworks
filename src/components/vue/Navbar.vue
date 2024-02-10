@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <Sidebar />
-    <v-app-bar :elevation="2" scroll-behavior="hide">
+    <v-app-bar :elevation="0" scroll-behavior="hide" class="!bg-white/50 backdrop-blur-md">
       <template v-slot:prepend>
         <v-btn variant="outlined" @click.stop="isSidebarOpen.set(!$isSideBarOpen)"
           >Menu</v-btn
