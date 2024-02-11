@@ -1,9 +1,15 @@
 <template>
   <v-layout>
     <Sidebar />
-    <v-app-bar :elevation="0" scroll-behavior="hide" class="!bg-white/50 backdrop-blur-md">
+    <v-app-bar
+      :elevation="0"
+      scroll-behavior="hide"
+      class="!bg-white/50 backdrop-blur-md top-0 left-0"
+    >
       <template v-slot:prepend>
-        <v-btn variant="outlined" @click.stop="isSidebarOpen.set(!$isSideBarOpen)"
+        <v-btn
+          variant="outlined"
+          @click.stop="isSidebarOpen.set(!$isSideBarOpen)"
           >Menu</v-btn
         >
       </template>
@@ -21,9 +27,6 @@
         >
       </template>
     </v-app-bar>
-    <v-main>
-      <slot />
-    </v-main>
   </v-layout>
 </template>
 <script setup lang="ts">
