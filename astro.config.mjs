@@ -17,7 +17,7 @@ export default defineConfig({
       noExternal: ["@smui/drawer", "@smui/list", "@smui/button"]
     }
   },
-  output: "static",
+  output: "hybrid",
   adapter: netlify({
     edgeMiddleware: true,
     cacheOnDemandPages: true,
