@@ -1,13 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Button } from "@nextui-org/react";
+import { ViewTransitions } from "astro:transitions";
 ---
 
-<Layout title="Sim table">
-  <main class="table-wrapper">
-    <div transition:name="h1-title">
-      <Button client:visible variant="flat">Hello world</Button>
-    </div>
-  </main>
-</Layout>
-<style></style>
+<html lang="en">
+  <head>
+    <title>My Homepage</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <Layout title="Sim table">
+      <div class="table-wrapper">
+        <div transition:name="h1-title">
+          <Button client:visible variant="flat">Hello world</Button>
+        </div>
+      </div>
+    </Layout>
+  </body>
+</html>

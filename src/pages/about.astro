@@ -1,9 +1,18 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="About to Astro.">
-    <main>
+<html lang="en">
+  <head>
+    <title>My Homepage</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <Layout title="About to Astro.">
+      <main>
         <h1 transition:name="h1-title">About page</h1>
-    </main>
-</Layout>
+      </main>
+    </Layout>
+  </body>
+</html>
