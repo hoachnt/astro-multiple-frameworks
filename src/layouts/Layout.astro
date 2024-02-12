@@ -19,7 +19,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Navbar client:load transition:persist />
+    <Navbar client:load />
     <main class="content">
       <section class="page-wrapper mt-16">
         <slot />
