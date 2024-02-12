@@ -1,7 +1,6 @@
 <script lang="ts">
-  import Drawer from "@smui/drawer";
-  import { Header, Title, Divider, Group, Button } from "@svelteuidev/core";
-  import { isSidebarOpen } from "../stores/SidebarStore";
+  import { Header, Divider, Group, Button } from "@svelteuidev/core";
+  import { isSidebarOpen } from "src/stores/SidebarStore";
   let open = $isSidebarOpen;
 
   $: open = !$isSidebarOpen;
@@ -23,6 +22,4 @@
 </Header>
 
 <style>
-  * :global(#sidebar) {
-  }
 </style>
